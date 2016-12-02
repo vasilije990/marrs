@@ -22,6 +22,7 @@ function getRoverData(name){
       $("#tekst").attr("value", name );
       var n = res.photo_manifest.max_sol.toString();
       Slajder_gen(n)
+          cssrover(name)
 })
 }
       getRoverData('curiosity');
@@ -94,3 +95,9 @@ $("#chk").append(cam_chec)
 
 }
 }
+function cssrover(rover){ if(rover==='curiosity')  
+{$('#curiosity img').css({'border': '3px solid grey','opacity': '0.7'});$('#spirit img, #opportunity img, #spirit img').css({'border': '3px solid transparent','opacity': '1' });} 
+if(rover==='opportunity')  
+{$('#opportunity img').css({'border': '3px solid grey', 'opacity': '0.7'});$('#curiosity img, #spirit img').css({'border': '3px solid transparent', 'opacity': '1'});} 
+if(rover==='spirit')  
+{$('#spirit img').css({'border': '3px solid grey','opacity': '0.7'});$('#curiosity img, #opportunity img').css({'border': '3px solid transparent','opacity': '1'});} }
