@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Mars</title>
+<style >
+#tekst, #cameras, .slider{  margin-bottom: 20px; }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="rover" >
+<h4>Select rover:</h4>
+<div class="switch">
+ <a onclick="switchRover('curiosity',cameras)"><img src="https://s3.amazonaws.com/digitaltrends-uploads-prod/2016/06/15958214_l.jpg" alt=""></a>
+ <a onclick="switchRover('opportunity',cameras)"><img src="https://www.exploratorium.edu/mars/images/rover1_br.jpg" alt=""></a>
+ <a onclick="switchRover('spirit',cameras)"><img src="https://apod.nasa.gov/apod/image/0512/enduranceplus_opportunity_big.jpg" alt=""></a>
+</div>
+<h4>Basic information:</h4>
+<div id="tekst"></div>
+<h4>Choose solar day:</h4>
+<div class="slider"></div>
+<div class="provera"></div>
+<h4>Choose camera:</h4>
+<div class="input_b" id="#cameras" >
+<div class="btn-group" data-toggle="buttons" id='chk'></div>
+</div>
+<button class="show" onclick="show(cameras)" >Show</button>
+</div>
+<div class="galerija" ></div>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="mars.js"></script>
+</body>
+</html>
